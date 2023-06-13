@@ -266,11 +266,6 @@ html {
   padding: 10px 15px;
 }
 
-.main__wrapper {
-  display: flex;
-  align-items: center;
-}
-
 .section-one__text {
   padding: 0 16px;
 }
@@ -295,6 +290,78 @@ html {
 
 .section-one__img {
   max-width: 100%;
+}
+
+.section-two {
+  border-top: 1px solid #D9FFF5;
+  padding-left: 16px;
+  /* padding-right: 14px; */
+}
+
+.section-two__title-wrapper {
+  padding: 16px 0;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.section-two__title {
+  color: #7E7E82;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+
+}
+
+.brand-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brand-card {
+  flex-basis: 240px;
+  height: 72px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.link-go {
+  outline: none;
+}
+
+.link-go:focus {
+  border: 2px solid #B8FFEC;
+  border-radius: .5em;
+  background-color: #ffffff;
+}
+
+
+/* swiper */
+.swiper-container {
+  padding-left: 16px;
+  padding-bottom: 40px;
+  -webkit-mask-image: linear-gradient(90deg, transparent,#000 .5rem calc(100% - 1rem), transparent);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #979797;
+}
+/* swiper */
+
+.footer {
+  height: 100px;
 }
 
 
@@ -342,12 +409,25 @@ html {
   border-radius: 1rem;
   padding-right: 16px;
   }
+  .section-two {
+    padding-left: 24px;
+    margin-bottom: 32px;
+  }
+  .brand-wrapper {
+    column-gap: 20px;
+  }
+  .section-two__title-wrapper {
+    margin-bottom: 24px;
+  }
+  .brand-card {
+    flex-basis: 224px;
+  }
 }
 
 @media (min-width: 1120px) {
   .wrapper-size {
     max-width: 1120px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
   .section-one__item--nonvisible--s-and-m {
     visibility: visible;
@@ -384,5 +464,14 @@ html {
   }
   .section-one__img {
     transform: translateY(-20px);
-    }
+  }
+  .section-two {
+    padding-left: 32px;
+  }
+  .brand-wrapper {
+    column-gap: 32px;
+  }
+  .brand-card {
+    flex-basis: 240px;
+  }
 }
