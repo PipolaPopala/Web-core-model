@@ -474,4 +474,7 @@ html {
   .brand-card {
     flex-basis: 240px;
   }
+  .brand-wrapper {
+    justify-content: start;
+  }
 }

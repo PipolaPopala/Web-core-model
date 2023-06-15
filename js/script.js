@@ -7,7 +7,7 @@ const btnShowText = document.querySelector('.btn-show__btn-text');
 
 document.addEventListener('DOMContentLoaded', () => {
 const width = window.innerWidth
-if (width < 500){
+if (width < 426){
     const slider = new Swiper('.swiper', {
         pagination: {
             el: '.swiper-pagination',
@@ -16,6 +16,9 @@ if (width < 500){
         slidesPerView: 1.15,
         spaceBetween: 16,
         freeMode: true,
+        keyboard: {
+            enabled: true,
+        }
     });
 } else {
     swiperWrapper.classList.add('brand-wrapper');
@@ -29,7 +32,7 @@ btnShow.addEventListener('click', btnShowClickText);
 btnShow.addEventListener('click', btnShowClickHeigth);
 
 function btnShowClickRotate() {
-    console.log('clickRotate');
+    // console.log('clickRotate');
     if (btnShowIcDown.style.transform == "rotate(0deg)") {
         return btnShowIcDown.style.transform = "rotate(180deg)"
     };
@@ -38,7 +41,7 @@ function btnShowClickRotate() {
     };
 }
 function btnShowClickText() {
-    console.log('clickText');
+    // console.log('clickText');
     if (btnShowText.textContent == "Показать все") {
         return btnShowText.textContent = "Скрыть"
     };
@@ -47,7 +50,7 @@ function btnShowClickText() {
     }
 }
 function btnShowClickHeigth() {
-    console.log('clickHeigth');
+    // console.log('clickHeigth');
     if (brandWrapper.style.maxHeight == "170px") {
         return brandWrapper.style.maxHeight = "100%"
     };
