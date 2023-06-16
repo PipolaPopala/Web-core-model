@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-core-model 1.5</title>
+    <title>Web-core-model 1.6</title>
     <meta name="description" content="Web-core-model">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -13,67 +13,153 @@
 <body class="body">
     <div class="wrapper-size">
 
-        <!-- <header class="header"></header> -->
+        <header class="header">
+            <div class="header__wrapper-icons header__wrapper-icons--nonvisible--d">
+                <div class="header__wrapper-icons--left">
+                    <button type="button" class="header__button button"><img src="icons/ic-burger.svg" alt=""></button>
+                    <img class="header__item--nonvisible" src="icons/divider.svg" alt="">
+                    <img src="icons/ic-cps.svg" alt="">
+                </div>
+                <div class="header__wrapper-icons--right">
+                    <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-call.svg" alt=""></button>
+                    <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-chat.svg" alt=""></button>
+                    <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-profile.svg" alt=""></button>
+                    <img src="icons/divider.svg" alt="">
+                    <button type="button" class="header__button button"><img src="icons/ic-repair.svg" alt=""></button>
+                    <button type="button" class="header__button button"><img src="icons/ic-checkstatus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="header__wrapper--desktop">
+                <div class="header__wrapper-title">
+                    <img class="header__higlight" src="icons/highlight.svg" alt="">
+                    <h1 class="header__title">Услуги и сервисы</h1>
+                </div>
+                <div class="header__wrapper-text">
+                    <button type="button" class="header__button header__button--flex button header__item-title--nonvisible">Оставить заявку<img src="icons/ic-repair.svg" alt=""></button>
+                    <button type="button" class="header__button header__button--flex button header__item-title--nonvisible">Статус ремонта<img src="icons/ic-checkstatus.svg" alt=""></button>
+                </div>
+            </div>
+            <!-- <nav class="header__nav">
+                <div class="header__wrapper-icons header__wrapper-icons--noborder">
+                    <div class="header__wrapper-icons--left header__wrapper-icons--gap">
+                        <button type="button" class="header__button button"><img src="icons/ic-burgerX.svg" alt=""></button>
+                        <img src="icons/ic-cps.svg" alt="">
+                    </div>
+                    <div class="header__wrapper-icons--right header__wrapper-icons--justify-end">
+                        <button type="button" class="header__button button"><img src="icons/ic-search.svg" alt=""></button>
+                    </div>
+                </div>
+                <nav class="burger-nav">
+                    <ul class="burger-nav__list mb-260px">
+                        <li class="burger-nav__item"><a class="burger-nav__link burger-nav__link--active" href="#">Ремонт техники</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Услуги и сервисы</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Корпоративным криентам</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Продовцам техники</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Партнёрам</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Производителям</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Наши сервисные центры</a></li>
+                        <li class="burger-nav__item"><a class="burger-nav__link" href="#">Контакты</a></li>
+                    </ul>
+                    <div class="burger-nav__footer">
+                        <div class="burger-nav__icons-wrapper mb-12px">
+                            <button type="button" class="button"><img src="icons/ic-call.svg" alt=""></button>
+                            <button type="button" class="button"><img src="icons/ic-chat.svg" alt=""></button>
+                            <button type="button" class="button"><img src="icons/ic-profile.svg" alt=""></button>
+                        </div>
+                        <span class="email mb-12px">mail@cps.com</span>
+                        <span class="number mb-40px">8 800 890 8900</span>
+                        <div class="language">
+                            <button type="button" class="button language__item language__item--active">RU</button>
+                            <button type="button" class="button language__item">EN</button>
+                            <button type="button" class="button language__item">CH</button>
+                        </div>
+                    </div>
+                </nav>
+            </nav> -->
+        </header>
 
         <main class="main">
 
-                <section class="section-two">
-                    <div class="section-two__title-wrapper">
-                        <h2 class="section-two__title">Ремонт техники различных брендов</h2>
-                    </div>
-                    <div class="swiper-container swiper">
-                        <div class="swiper-wrapper mb-24px" style="max-height: 170px">
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-lenovo.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-samsung.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-apple.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-viewsonic.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-bosch.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-hp.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-acer.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-sony.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-lenovo.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-samsung.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide brand-card">
-                                <img src="icons/brand-apple.svg" alt="">
-                                <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
-                            </div>
+            <nav class="nav mb-24px">
+                <ul class="nav__list pb-12px">
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="#">Ремонтируемые бренды</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Дополнительные услуги</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+                </ul>
+            </nav>
+
+            <section class="section-one">
+                <h2 class="visually-hidden">Ремонтируемые бренды</h2>
+                <div class="section-one__text">
+                    <p class="mb-12px">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="section-one__item--nonvisible--s mb-12px">Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнёра<span class="section-one__item--nonvisible--s-and-m">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <button type="button" class="button btn-down"><img class="ic-down" src="icons/ic-down.svg" alt=""><span class="btn-text">Узнать больше</span></button>
+                </div>
+                <div class="section-one__wrapper-img">
+                    <img class="section-one__img" src="img/cps-photo-l.jpg"  alt="">
+                </div>
+            </section>
+
+            <section class="section-two">
+                <div class="section-two__title-wrapper">
+                    <h2 class="section-two__title">Ремонт техники различных брендов</h2>
+                </div>
+                <div class="swiper-container swiper">
+                    <div class="swiper-wrapper mb-24px" style="max-height: 170px">
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-lenovo.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-samsung.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-apple.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-viewsonic.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-bosch.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-hp.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-acer.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-sony.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-lenovo.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-samsung.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide brand-card">
+                            <img src="icons/brand-apple.svg" alt="">
+                            <a class="link-go" href="#"><img src="icons/ic-go.svg" alt=""></a>
+                        </div>
                     </div>
-                    <button type="button" class="button btn-down btn-show visually-hidden">
-                        <img class="ic-down btn-show__ic-down" src="icons/ic-down.svg" alt="" style="transform: rotate(0deg)">
-                        <span class="btn-text btn-show__btn-text">Показать все</span></button>
-                </section>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button type="button" class="button btn-down btn-show visually-hidden">
+                    <img class="ic-down btn-show__ic-down" src="icons/ic-down.svg" alt="" style="transform: rotate(0deg)">
+                    <span class="btn-text btn-show__btn-text">Показать все</span></button>
+            </section>
 
 
         </main>

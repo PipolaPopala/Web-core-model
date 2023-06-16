@@ -312,7 +312,6 @@ html {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.6rem;
-
 }
 
 .brand-wrapper {
@@ -427,7 +426,7 @@ html {
 @media (min-width: 1120px) {
   .wrapper-size {
     max-width: 1120px;
-    /* padding-top: 60px; */
+    padding-top: 60px;
   }
   .section-one__item--nonvisible--s-and-m {
     visibility: visible;

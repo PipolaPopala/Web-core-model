@@ -1,1 +1,1 @@
-# web-core-model 1.5
+# web-core-model 1.6

@@ -32,7 +32,7 @@ btnShow.addEventListener('click', btnShowClickText);
 btnShow.addEventListener('click', btnShowClickHeigth);
 
 function btnShowClickRotate() {
-    // console.log('clickRotate');
+    // console.log('clickRotate'); // для проверки работы функции
     if (btnShowIcDown.style.transform == "rotate(0deg)") {
         return btnShowIcDown.style.transform = "rotate(180deg)"
     };
@@ -41,7 +41,7 @@ function btnShowClickRotate() {
     };
 }
 function btnShowClickText() {
-    // console.log('clickText');
+    // console.log('clickText'); // для проверки работы функции
     if (btnShowText.textContent == "Показать все") {
         return btnShowText.textContent = "Скрыть"
     };
@@ -50,7 +50,7 @@ function btnShowClickText() {
     }
 }
 function btnShowClickHeigth() {
-    // console.log('clickHeigth');
+    // console.log('clickHeigth'); // для проверки работы функции
     if (brandWrapper.style.maxHeight == "170px") {
         return brandWrapper.style.maxHeight = "100%"
     };
