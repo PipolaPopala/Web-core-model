@@ -1,14 +1,13 @@
-const swiperWrapper = document.querySelector('.swiper-wrapper');
-const swiper = document.querySelector('.swiper');
-const btnShow = document.querySelector('.btn-show');
-const btnShowIcDown = document.querySelector('.btn-show__ic-down');
-const brandWrapper = document.querySelector('.swiper-wrapper');
-const btnShowText = document.querySelector('.btn-show__btn-text');
+// секция с брендами
+
+const brandWrapper = document.querySelector('.swiper-wrapper-brand');
+const brandBtnShow = document.querySelector('.btn-show-brand');
+const brandSwiper = document.querySelector('.swiper-brand');
 
 document.addEventListener('DOMContentLoaded', () => {
 const width = window.innerWidth
 if (width < 426){
-    const slider = new Swiper('.swiper', {
+    const slider = new Swiper('.swiper-brand', {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -21,35 +20,38 @@ if (width < 426){
         }
     });
 } else {
-    swiperWrapper.classList.add('brand-wrapper');
-    btnShow.classList.remove('visually-hidden');
-    swiper.classList.remove('swiper-container');
+    brandWrapper.classList.add('brand-wrapper');
+    brandBtnShow.classList.remove('visually-hidden');
+    brandSwiper.classList.remove('swiper-container');
 }
 });
 
-btnShow.addEventListener('click', btnShowClickRotate);
-btnShow.addEventListener('click', btnShowClickText);
-btnShow.addEventListener('click', btnShowClickHeigth);
+const brandShowIcDown = document.querySelector('.brand-show-ic-down');
+const brandShowText = document.querySelector('.brand-show-btn-text');
 
-function btnShowClickRotate() {
+brandBtnShow.addEventListener('click', brandBtnShowClickRotate);
+brandBtnShow.addEventListener('click', brandBtnShowClickText);
+brandBtnShow.addEventListener('click', brandBtnShowClickHeigth);
+
+function brandBtnShowClickRotate() {
     // console.log('clickRotate'); // для проверки работы функции
-    if (btnShowIcDown.style.transform == "rotate(0deg)") {
-        return btnShowIcDown.style.transform = "rotate(180deg)"
+    if (brandShowIcDown.style.transform == "rotate(0deg)") {
+        return brandShowIcDown.style.transform = "rotate(180deg)"
     };
-    if (btnShowIcDown.style.transform == "rotate(180deg)") {
-        return btnShowIcDown.style.transform = "rotate(0deg)"
+    if (brandShowIcDown.style.transform == "rotate(180deg)") {
+        return brandShowIcDown.style.transform = "rotate(0deg)"
     };
 }
-function btnShowClickText() {
+function brandBtnShowClickText() {
     // console.log('clickText'); // для проверки работы функции
-    if (btnShowText.textContent == "Показать все") {
-        return btnShowText.textContent = "Скрыть"
+    if (brandShowText.textContent == "Показать все") {
+        return brandShowText.textContent = "Скрыть"
     };
-    if (btnShowText.textContent == "Скрыть") {
-        return btnShowText.textContent = "Показать все"
+    if (brandShowText.textContent == "Скрыть") {
+        return brandShowText.textContent = "Показать все"
     }
 }
-function btnShowClickHeigth() {
+function brandBtnShowClickHeigth() {
     // console.log('clickHeigth'); // для проверки работы функции
     if (brandWrapper.style.maxHeight == "170px") {
         return brandWrapper.style.maxHeight = "100%"
@@ -58,3 +60,69 @@ function btnShowClickHeigth() {
         return brandWrapper.style.maxHeight = "170px"
     };
 }
+
+// секция с видами техники
+
+const typeWrapper = document.querySelector('.swiper-wrapper-type');
+const typeBtnShow = document.querySelector('.btn-show-type');
+const typeSwiper = document.querySelector('.swiper-type');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const width = window.innerWidth
+    if (width < 426){
+        const slider = new Swiper('.swiper-type', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1.15,
+            spaceBetween: 16,
+            freeMode: true,
+            keyboard: {
+                enabled: true,
+            }
+        });
+    } else {
+        typeWrapper.classList.add('type-wrapper');
+        typeBtnShow.classList.remove('visually-hidden');
+        typeSwiper.classList.remove('swiper-container');
+    }
+    });
+
+const typeShowIcDown = document.querySelector('.type-show-ic-down');
+const typeShowText = document.querySelector('.type-show-btn-text');
+
+typeBtnShow.addEventListener('click', typeBtnShowClickRotate);
+typeBtnShow.addEventListener('click', typeBtnShowClickText);
+typeBtnShow.addEventListener('click', typeBtnShowClickHeigth);
+
+function typeBtnShowClickRotate() {
+    // console.log('clickRotate'); // для проверки работы функции
+    if (typeShowIcDown.style.transform == "rotate(0deg)") {
+        return typeShowIcDown.style.transform = "rotate(180deg)"
+    };
+    if (typeShowIcDown.style.transform == "rotate(180deg)") {
+        return typeShowIcDown.style.transform = "rotate(0deg)"
+    };
+}
+function typeBtnShowClickText() {
+    // console.log('clickText'); // для проверки работы функции
+    if (typeShowText.textContent == "Показать все") {
+        return typeShowText.textContent = "Скрыть"
+    };
+    if (typeShowText.textContent == "Скрыть") {
+        return typeShowText.textContent = "Показать все"
+    }
+}
+function typeBtnShowClickHeigth() {
+    // console.log('clickHeigth'); // для проверки работы функции
+    if (typeWrapper.style.maxHeight == "170px") {
+        return typeWrapper.style.maxHeight = "100%"
+    };
+    if (typeWrapper.style.maxHeight == "100%") {
+        return typeWrapper.style.maxHeight = "170px"
+    };
+}
+
+// что-то следующее
+
