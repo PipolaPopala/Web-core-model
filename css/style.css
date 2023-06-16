@@ -244,6 +244,7 @@ html {
   display: flex;
   overflow: auto;
   margin: 0 16px;
+  padding-top: 2px;
   -webkit-mask-image: linear-gradient(90deg, transparent,#000 .5rem calc(100% - 5rem), transparent);
 }
 
@@ -459,6 +460,7 @@ html {
     flex-wrap: wrap;
     margin: 0 32px;
     padding: 0px;
+    padding-top: 2px;
     row-gap: 10px;
   }
   .section-one__img {
