@@ -1,3 +1,5 @@
+'use strict'
+
 // секция с брендами
 
 const brandWrapper = document.querySelector('.swiper-wrapper-brand');
@@ -124,5 +126,31 @@ function typeBtnShowClickHeigth() {
     };
 }
 
-// что-то следующее
+// секция с сервисом
+
+const serviceContainer = document.querySelector('.swiper-service');
+const serviceDesctop = document.querySelector('.service-desctop');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const width = window.innerWidth
+    if (width < 700){
+        const slider = new Swiper('.swiper-service', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1.1,
+            spaceBetween: 16,
+            freeMode: true,
+            keyboard: {
+                enabled: true,
+            }
+        });
+    } else {
+        serviceContainer.classList.add('service-nonedisplay');
+        serviceDesctop.classList.remove('visually-hidden');
+    }
+    });
+
+// логика всплывающих окон
 
