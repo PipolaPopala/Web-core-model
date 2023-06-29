@@ -720,7 +720,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
     margin: 0 24px;
   }
   .burger-nav__list {
-    margin-bottom: 268px;
+    margin-bottom: 24px;
   }
   .section-one__item--nonvisible--s-and-m {
     visibility: hidden;
