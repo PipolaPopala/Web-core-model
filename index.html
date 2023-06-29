@@ -16,13 +16,13 @@
         <header class="header">
             <div class="header__wrapper-icons header__wrapper-icons--nonvisible--d">
                 <div class="header__wrapper-icons--left">
-                    <button type="button" class="header__button button"><img src="icons/ic-burger.svg" alt=""></button>
+                    <button type="button" class="header__button button hamburger-off"><img src="icons/ic-burger.svg" alt=""></button>
                     <img class="header__item--nonvisible" src="icons/divider.svg" alt="">
                     <img src="icons/ic-cps.svg" alt="">
                 </div>
                 <div class="header__wrapper-icons--right">
-                    <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-call.svg" alt=""></button>
-                    <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-chat.svg" alt=""></button>
+                    <button type="button" class="header__button button header__item--nonvisible call-off-header"><img src="icons/ic-call.svg" alt=""></button>
+                    <button type="button" class="header__button button header__item--nonvisible feedback-off-header"><img src="icons/ic-chat.svg" alt=""></button>
                     <button type="button" class="header__button button header__item--nonvisible"><img src="icons/ic-profile.svg" alt=""></button>
                     <img src="icons/divider.svg" alt="">
                     <button type="button" class="header__button button"><img src="icons/ic-repair.svg" alt=""></button>
@@ -39,10 +39,11 @@
                     <button type="button" class="header__button header__button--flex button header__item-title--nonvisible">Статус ремонта<img src="icons/ic-checkstatus.svg" alt=""></button>
                 </div>
             </div>
-            <!-- <nav class="header__nav">
+
+            <nav class="header__nav unactive-menu unactive-menu--desktop">
                 <div class="header__wrapper-icons header__wrapper-icons--noborder">
                     <div class="header__wrapper-icons--left header__wrapper-icons--gap">
-                        <button type="button" class="header__button button"><img src="icons/ic-burgerX.svg" alt=""></button>
+                        <button type="button" class="header__button button hamburger-on"><img src="icons/ic-burgerX.svg" alt=""></button>
                         <img src="icons/ic-cps.svg" alt="">
                     </div>
                     <div class="header__wrapper-icons--right header__wrapper-icons--justify-end">
@@ -50,7 +51,7 @@
                     </div>
                 </div>
                 <nav class="burger-nav">
-                    <ul class="burger-nav__list mb-260px">
+                    <ul class="burger-nav__list">
                         <li class="burger-nav__item"><a class="burger-nav__link burger-nav__link--active" href="#">Ремонт техники</a></li>
                         <li class="burger-nav__item"><a class="burger-nav__link" href="#">Услуги и сервисы</a></li>
                         <li class="burger-nav__item"><a class="burger-nav__link" href="#">Корпоративным криентам</a></li>
@@ -62,8 +63,8 @@
                     </ul>
                     <div class="burger-nav__footer">
                         <div class="burger-nav__icons-wrapper mb-12px">
-                            <button type="button" class="button"><img src="icons/ic-call.svg" alt=""></button>
-                            <button type="button" class="button"><img src="icons/ic-chat.svg" alt=""></button>
+                            <button type="button" class="button call-off-burger"><img src="icons/ic-call.svg" alt=""></button>
+                            <button type="button" class="button feedback-off-burger"><img src="icons/ic-chat.svg" alt=""></button>
                             <button type="button" class="button"><img src="icons/ic-profile.svg" alt=""></button>
                         </div>
                         <span class="email mb-12px">mail@cps.com</span>
@@ -75,7 +76,43 @@
                         </div>
                     </div>
                 </nav>
-            </nav> -->
+                <div class="nav-white-background"></div>
+            </nav>
+
+            <div class="feedback unactive-menu">
+                <button type="button" class="button feedback-on"><img src="icons/ic-burgerX.svg" alt=""></button>
+                <div class="feedback__wrapper-title">
+                    <img class="feedback__higlight" src="icons/highlight.svg" alt="">
+                    <h3 class="feedback__title">Обратная связь</h3>
+                </div>
+                <form action="#">
+                    <input type="text" name="fullname" id="feedbackFullname" placeholder="Имя">
+                    <input type="tel" name="phoneNumber" id="feedbackPhoneNumber" placeholder="Телефон">
+                    <input type="email" name="email" id="feedbackEmail" placeholder="Электронная почта">
+                    <textarea name="massage" id="feedbackMassage" cols="30" rows="4" placeholder="Сообщение"></textarea>
+                </form>
+                <p class="feedback__text mb-24px">Нажимая "отправить", вы даете согласие на <span class="pink">обработку персонадбных данных </span>и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+                <div class="feedback__button-wrapper">
+                    <button class="button feedback__button">ОТПРАВИТЬ<img src="icons/ic-right-white.svg" alt=""></button>
+                </div>
+                <div class="feedback-white-background"></div>
+            </div>
+
+            <div class="call unactive-menu">
+                <button type="button" class="button call-on"><img src="icons/ic-burgerX.svg" alt=""></button>
+                <div class="call__wrapper-title">
+                    <img class="call__higlight" src="icons/highlight.svg" alt="">
+                    <h3 class="call__title">Заказать звонок</h3>
+                </div>
+                <form action="#">
+                    <input type="tel" name="phoneNumber" id="callPhoneNumber" placeholder="Телефон">
+                </form>
+                <p class="call__text mb-24px">Нажимая "отправить", вы даете согласие на <span class="pink">обработку персонадбных данных </span>и соглашаетесь с нашей <span class="pink">политикой конфиденциальности</span></p>
+                <div class="call__button-wrapper">
+                    <button class="button call__button">ОТПРАВИТЬ<img src="icons/ic-right-white.svg" alt=""></button>
+                </div>
+                <div class="call-white-background"></div>
+            </div>
         </header>
 
         <main class="main">

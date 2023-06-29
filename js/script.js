@@ -154,3 +154,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // логика всплывающих окон
 
+// hamburger
+
+const hamburgerOff = document.querySelector('.hamburger-off');
+const hamburgerOn = document.querySelector('.hamburger-on');
+const navWhiteBackground = document.querySelector('.nav-white-background');
+const headerNav = document.querySelector('.header__nav');
+
+hamburgerOff.addEventListener('click', toggleHamburger);
+hamburgerOn.addEventListener('click', toggleHamburger);
+navWhiteBackground.addEventListener('click', toggleHamburger);
+
+function toggleHamburger() {
+    headerNav.classList.toggle('unactive-menu')
+};
+
+// feedback
+
+const feedbackOffHeader = document.querySelector('.feedback-off-header');
+const feedbackOffBurger = document.querySelector('.feedback-off-burger');
+const feedbackOn = document.querySelector('.feedback-on');
+const feedbackWhiteBackground = document.querySelector('.feedback-white-background');
+const feedback = document.querySelector('.feedback');
+
+feedbackOffHeader.addEventListener('click', togglefeedback);
+feedbackOffBurger.addEventListener('click', togglefeedback);
+feedbackOn.addEventListener('click', togglefeedback);
+feedbackWhiteBackground.addEventListener('click', togglefeedback);
+
+function togglefeedback() {
+    feedback.classList.toggle('unactive-menu')
+};
+
+// call
+
+const callOffHeader = document.querySelector('.call-off-header');
+const callOffBurger = document.querySelector('.call-off-burger');
+const callOn = document.querySelector('.call-on');
+const callWhiteBackground = document.querySelector('.call-white-background');
+const call = document.querySelector('.call');
+
+callOffHeader.addEventListener('click', togglecall);
+callOffBurger.addEventListener('click', togglecall);
+callOn.addEventListener('click', togglecall);
+callWhiteBackground.addEventListener('click', togglecall);
+
+function togglecall() {
+    call.classList.toggle('unactive-menu')
+};
