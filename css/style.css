@@ -134,16 +134,23 @@ html {
   background-color: transparent;
   border: 0;
   outline: none;
+  transition: all 1s ease-out;
 }
 
 .button:hover {
   cursor: pointer;
+  transform: scale(1.15);
 }
 
 .button:focus, .nav__link:focus, .burger-nav__link:focus, .nav__link--active {
   border: 2px solid #B8FFEC;
-  border-radius: .5em;
+  border-radius: 10px;
   background-color: #ffffff;
+}
+
+.feedback__button:focus, .call__button:focus, .service-card__button:focus, .service-desctop__button:focus {
+  background-color: #FF3E79;
+  border-radius: 20px;
 }
 
 .header__title {
@@ -190,6 +197,11 @@ html {
   list-style-type: none;
   margin-bottom: 32px;
   padding-left: 12px;
+  transition: all 1s ease-out;
+}
+
+.burger-nav__item:hover {
+  transform: scale(1.1);
 }
 
 .burger-nav__link {
@@ -202,6 +214,10 @@ html {
   transition: filter 1s;
 }
 
+.burger-nav__link:hover {
+  filter: opacity(40%);
+}
+
 .burger-nav__item:last-child {
   margin-bottom: 0px;
 }
@@ -209,10 +225,6 @@ html {
 .burger-nav__link--active {
   position: relative;
   color: #7E7E82;
-}
-
-.burger-nav__link:hover {
-  filter: opacity(40%);
 }
 
 .burger-nav__link--active::before {
@@ -261,13 +273,17 @@ html {
   display: flex;
   overflow: auto;
   margin: 0 16px;
-  padding-top: 2px;
   -webkit-mask-image: linear-gradient(90deg, transparent,#000 .5rem calc(100% - 5rem), transparent);
 }
 
 .nav__item {
   padding: 12px 0px;
   list-style-type: none;
+  transition: all 1s ease-out;
+}
+
+.nav__item:hover {
+  transform: scale(1.1);
 }
 
 .nav__item:first-child {
@@ -483,6 +499,11 @@ input[type=text], input[type=tel], input[type=email], textarea {
 
 .link-go {
   outline: none;
+  transition: all 1s ease-out;
+}
+
+.link-go:hover {
+  transform: scale(1.15);
 }
 
 .link-go:focus {
@@ -771,7 +792,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .header__nav {
     left: 0;
   }
