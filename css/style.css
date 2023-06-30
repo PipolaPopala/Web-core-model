@@ -26,12 +26,6 @@ html {
 .mb-40px {
   margin-bottom: 40px;
 }
-.mb-260px {
-  margin-bottom: 260px;
-}
-.pb-12px {
-  padding-bottom: 12px;
-}
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -273,6 +267,8 @@ html {
   display: flex;
   overflow: auto;
   margin: 0 16px;
+  padding-bottom: 12px;
+  padding-top: 6px;
   -webkit-mask-image: linear-gradient(90deg, transparent,#000 .5rem calc(100% - 5rem), transparent);
 }
 
@@ -420,32 +416,26 @@ input[type=text], input[type=tel], input[type=email], textarea {
   position: relative;
 }
 
-
-
-
-
 .section, footer {
   border-top: 1px solid #D9FFF5;
   padding-left: 16px;
-  margin-bottom: 24px;
-  /* padding-right: 14px; */
 }
 
-.section-one {
-  margin-bottom: 24px;
+.section--mb50px {
+  margin-bottom: 50px;
 }
 
 .section-one__text {
   padding: 0 16px;
+  margin-bottom: 16px;
 }
 
 .btn-down{
   padding: 8px;
-  margin-bottom: 12px;
 }
 
 .ic-down {
-  margin-right: 8px;
+  padding-right: 8px;
 }
 
 .btn-text {
@@ -486,7 +476,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
 }
 
 .brand-card {
-  flex-basis: 240px;
+  /* flex-basis: 240px; */
   height: 72px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -534,7 +524,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
 }
 
 .type-card {
-  flex-basis: 240px;
+  /* flex-basis: 240px; */
   height: 160px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -558,7 +548,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
 }
 
 .service-card {
-  flex-basis: 260px;
+  /* flex-basis: 260px; */
   height: 200px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -727,6 +717,15 @@ input[type=text], input[type=tel], input[type=email], textarea {
   }
 }
 
+@media (min-width: 550px) {
+  .brand-card, .type-card {
+    flex-basis: 240px;
+  }
+  .service-card {
+    flex-basis: 260px;
+  }
+}
+
 @media (min-width: 768px) {
   .header__wrapper-icons--left {
     min-width: 25%;
@@ -741,7 +740,7 @@ input[type=text], input[type=tel], input[type=email], textarea {
     margin: 0 24px;
   }
   .burger-nav__list {
-    margin-bottom: 24px;
+    margin-bottom: 268px;
   }
   .section-one__item--nonvisible--s-and-m {
     visibility: hidden;
@@ -761,7 +760,6 @@ input[type=text], input[type=tel], input[type=email], textarea {
   }
   .section, footer {
     padding-left: 24px;
-    margin-bottom: 32px;
   }
   .brand-wrapper, .type-wrapper {
     column-gap: 24px;
@@ -835,8 +833,6 @@ input[type=text], input[type=tel], input[type=email], textarea {
     display: flex;
     flex-wrap: wrap;
     margin: 0 32px;
-    padding: 0px;
-    padding-top: 2px;
     row-gap: 10px;
   }
   .section-one__img {

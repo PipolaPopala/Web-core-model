@@ -8,7 +8,7 @@ const brandSwiper = document.querySelector('.swiper-brand');
 
 document.addEventListener('DOMContentLoaded', () => {
 const width = window.innerWidth
-if (width < 426){
+if (width < 550){
     const slider = new Swiper('.swiper-brand', {
         pagination: {
             el: '.swiper-pagination',
@@ -71,7 +71,7 @@ const typeSwiper = document.querySelector('.swiper-type');
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
-    if (width < 426){
+    if (width < 550){
         const slider = new Swiper('.swiper-type', {
             pagination: {
                 el: '.swiper-pagination',
@@ -133,13 +133,13 @@ const serviceDesctop = document.querySelector('.service-desctop');
 
 document.addEventListener('DOMContentLoaded', () => {
     const width = window.innerWidth
-    if (width < 700){
+    if (width < 550){
         const slider = new Swiper('.swiper-service', {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            slidesPerView: 1.1,
+            slidesPerView: 1.15,
             spaceBetween: 16,
             freeMode: true,
             keyboard: {
